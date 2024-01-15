@@ -37,6 +37,11 @@
                             Desafio Meses
                         </a>
                     </li>
+                    <li>
+                        <a href="exercicio.php?dir=array&file=operacoes">
+                            Operações
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div class="modulo roxo">
