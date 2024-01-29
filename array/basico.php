@@ -16,7 +16,7 @@ echo '<br>' . $lista[1];
 echo '<br>' . $lista[2];
 echo '<br>' . $lista[3];
 echo '<br>';
-var_dump($lista[4]);
+
 
 $texto = 'Leopoldo Ferreira Medeiros';
 echo '<br>' . $texto[0];
