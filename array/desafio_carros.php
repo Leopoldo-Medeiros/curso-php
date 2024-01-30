@@ -60,23 +60,4 @@ if ($tipo && $marca) {
         $options_modelo .= '<option value="' . $modelo_key . '">' . $modelo_value . '</option>';
     }
 }
-
-echo '<select name="tipo">';
-echo $options_tipo;
-echo '<select>';
-
-echo '<select name="marca">';
-echo $options_marca;
-echo '</select>';
-
-echo '<select name="modelo">';
-echo $options_modelo;
-echo '</select>';
-
-// Create the submit button
-echo '<input type="submit" value="Enviar">';
-
-// Close the form
-echo '</form>';
-
 ?>
