@@ -1,9 +1,13 @@
+<<<<<<< HEAD
 <?php
 	include "../includes/header.php";
 ?>
 	<main class="principal">
 	<div class="conteudo">
 		<div class="titulo">Operadores Lógicos</div>
+=======
+<div class="titulo">Operadores Lógicos</div>
+>>>>>>> c4e8900 (Initial commit)
 
 <?php
 echo "<p class='divisao'>Negação Lógica</p><hr>";
@@ -60,6 +64,7 @@ if($idade >= 60 && $sexo === 'F') {
     echo 'Vai ter que trampar mais um pouco peão!';
 }
 
+<<<<<<< HEAD
 ?>
 
 			</div>
@@ -67,4 +72,7 @@ if($idade >= 60 && $sexo === 'F') {
 <?php
 include "../includes/footer.php";
 ?>
+=======
+
+>>>>>>> c4e8900 (Initial commit)
 

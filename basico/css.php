@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 	include "../includes/header.php";
 ?>
@@ -7,6 +8,12 @@
 
 <h1 center>
 <?php
+=======
+<div class="titulo">Integração CSS</div>
+
+<h1 center>
+<?php 
+>>>>>>> c4e8900 (Initial commit)
 echo 'Olá';
 echo '<small>';
 echo ' Mundo!';
@@ -40,6 +47,7 @@ echo '</small>';
     [dobro] {
         font-size: <?= 10 - 8 ?>rem;
     }
+<<<<<<< HEAD
 </style>
 
 			</div>
@@ -47,3 +55,6 @@ echo '</small>';
 <?php
 include "../includes/footer.php";
 ?>
+=======
+</style>
+>>>>>>> c4e8900 (Initial commit)

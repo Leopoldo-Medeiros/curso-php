@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Desafio Carros</title>
+</head>
+<body>
+
+<h3>Form Carros</h3>
+<hr>
+
+<form action="desafio_carros.php" method="get">
+
+  <label for="tipo">Categoria</label>
+  <select name="tipo" id="tipo">
+    <option value="sedans">Sedans</option>
+    <option value="SUV">SUV</option>
+    <option value="esportivos">Esportivos</option>
+  </select>
+
+  <label for="marca">Marca</label>
+  <select name="marca" id="marca">
+    <option value="Toyota">Toyota</option>
+    <option value="Honda">Honda</option>
+    <option value="Ford">Ford</option>
+  </select>
+
+  <label for="modelo">Modelo</label>
+  <select name="modelo" id="modelo">
+    <option value="Camry">Camry</option>
+    <option value="Corolla">Corolla</option>
+    <option value="Avalon">Avalon</option>
+  </select>
+
+  <input type="submit" value="Enviar">
+
+</form>
+
+
+<?php
+
+$carro = implode(' ', array($tipo, $marca, $modelo));
+
+if ($carro) {
+  echo '<p>O carro selecionado é: <b>' . $carro . '</b>';
+}
+?>
+
+</body>
+</html>

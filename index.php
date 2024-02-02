@@ -14,6 +14,7 @@
 <main class="principal">
     <div class="conteudo">
         <nav class="modulos">
+<<<<<<< HEAD
             <div class="modulo verde-escuro">
                 <h3>6. Repetições</h3>
                 <ul>
@@ -45,6 +46,8 @@
 >>>>>>> aa049e9 (WIP)
                 </ul>
             </div>
+=======
+>>>>>>> c4e8900 (Initial commit)
             <div class="modulo laranja">
                 <h3>5. Array</h3>
                 <ul>

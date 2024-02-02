@@ -1,9 +1,13 @@
+<<<<<<< HEAD
 <?php
 	include "../includes/header.php";
 ?>
 	<main class="principal">
 	<div class="conteudo">
 		<div class="titulo">Desafio Operadores Lógicos</div>
+=======
+<div class="titulo">Desafio Operadores Lógicos</div>
+>>>>>>> c4e8900 (Initial commit)
 
 <!--
     2 trabalhos -> Terça e Quinta
@@ -74,6 +78,7 @@ if(isset($_POST['t1']) && isset($_POST['t2'])) {
     }
 
     echo "<p>$resultado</p>";
+<<<<<<< HEAD
 }
 ?>
 
@@ -82,3 +87,6 @@ if(isset($_POST['t1']) && isset($_POST['t2'])) {
 <?php
 include "../includes/footer.php";
 ?>
+=======
+}
+>>>>>>> c4e8900 (Initial commit)

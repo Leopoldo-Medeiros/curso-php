@@ -1,9 +1,13 @@
+<<<<<<< HEAD
 <?php
 	include "../includes/header.php";
 ?>
 	<main class="principal">
 	<div class="conteudo">
 		<div class="titulo">Tipo Booleano</div>
+=======
+<div class="titulo">Tipo Booleano</div>
+>>>>>>> c4e8900 (Initial commit)
 
 <?php
 echo TRUE;
@@ -29,6 +33,7 @@ echo '<br>' . var_dump((bool) " "); // todo resto é true
 echo '<br>' . var_dump((bool) "00");
 echo '<br>' . var_dump((bool) "false");
 
+<<<<<<< HEAD
 echo '<br>' . var_dump(!!"false");
 ?>
 
@@ -37,3 +42,6 @@ echo '<br>' . var_dump(!!"false");
 <?php
 include "../includes/footer.php";
 ?>
+=======
+echo '<br>' . var_dump(!!"false");
+>>>>>>> c4e8900 (Initial commit)

@@ -1,9 +1,13 @@
+<<<<<<< HEAD
 <?php
 	include "../includes/header.php";
 ?>
 	<main class="principal">
 	<div class="conteudo">
 		<div class="titulo">Switch</div>
+=======
+<div class="titulo">Switch</div>
+>>>>>>> c4e8900 (Initial commit)
 
 <?php
 $categoria = 'wrewrew';
@@ -52,6 +56,7 @@ switch (strtolower($categoria)) {
 
 $precoFormatacao = number_format($preco, 2, ',', '.');
 echo "<p>Carro: $carro<br>Preço: $precoFormatacao</p>";
+<<<<<<< HEAD
 ?>
 
 
@@ -60,3 +65,5 @@ echo "<p>Carro: $carro<br>Preço: $precoFormatacao</p>";
 <?php
 include "../includes/footer.php";
 ?>
+=======
+>>>>>>> c4e8900 (Initial commit)
