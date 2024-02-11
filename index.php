@@ -22,6 +22,7 @@
                             Laço For
                         </a>
                     </li>
+<<<<<<< HEAD
                     <li>
                         <a href="exercicio.php?dir=repeticoes&file=desafio_for">
                             Desafio For
@@ -40,6 +41,8 @@
                     </li>
 =======
 >>>>>>> 71cd1d4 (WIP)
+=======
+>>>>>>> aa049e9 (WIP)
                 </ul>
             </div>
             <div class="modulo laranja">
