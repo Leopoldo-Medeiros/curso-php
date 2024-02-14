@@ -1,4 +1,9 @@
-<div class="titulo">Tipo Booleano</div>
+<?php
+	include "../includes/header.php";
+?>
+	<main class="principal">
+	<div class="conteudo">
+		<div class="titulo">Tipo Booleano</div>
 
 <?php
 echo TRUE;
@@ -25,3 +30,10 @@ echo '<br>' . var_dump((bool) "00");
 echo '<br>' . var_dump((bool) "false");
 
 echo '<br>' . var_dump(!!"false");
+?>
+
+			</div>
+		</main>
+<?php
+include "../includes/footer.php";
+?>

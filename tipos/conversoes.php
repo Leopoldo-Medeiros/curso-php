@@ -1,4 +1,9 @@
-<div class="titulo">Conversões</div>
+<?php
+	include "../includes/header.php";
+?>
+	<main class="principal">
+	<div class="conteudo">
+		<div class="titulo">Conversões</div>
 
 <?php
 echo is_int(PHP_INT_MAX);
@@ -44,3 +49,10 @@ echo '<br>';
 var_dump((int) "10.5");
 echo '<br>';
 var_dump((float) "10.5");
+?>
+
+			</div>
+		</main>
+<?php
+include "../includes/footer.php";
+?>

@@ -1,4 +1,9 @@
-<div class="titulo">Interpolação</div>
+<?php
+	include "../includes/header.php";
+?>
+	<main class="principal">
+	<div class="conteudo">
+		<div class="titulo">Interpolação</div>
 
 <?php
 $numero = 10;
@@ -13,3 +18,9 @@ $objeto = 'caneta';
 echo "<br>Eu tenho 5 $objetos";
 echo "<br>Eu tenho 5 {$objeto}s.";
 echo "<br>Eu tinha 5 { $objeto}s mas perdi 3 {$objeto }s";
+?>
+			</div>
+		</main>
+<?php
+include "../includes/footer.php";
+?>

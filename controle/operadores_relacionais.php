@@ -1,4 +1,9 @@
-<div class="titulo">Operadores Relacionais</div>
+<?php
+	include "../includes/header.php";
+?>
+	<main class="principal">
+	<div class="conteudo">
+		<div class="titulo">Operadores Relacionais</div>
 
 <?php
 var_dump(1 == 1); // true
@@ -45,3 +50,9 @@ var_dump(!!" ");
         margin-top: 0px;
     }
 </style>
+
+			</div>
+		</main>
+<?php
+include "../includes/footer.php";
+?>

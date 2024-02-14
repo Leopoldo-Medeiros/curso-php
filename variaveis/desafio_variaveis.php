@@ -1,4 +1,9 @@
-<div class="titulo">Desafio Variáveis</div>
+<?php
+	include "../includes/header.php";
+?>
+	<main class="principal">
+	<div class="conteudo">
+		<div class="titulo">Desafio Variáveis</div>
 
 <?php
 
@@ -14,3 +19,10 @@ echo "Nossa! Eu consegui responder esse desafio.";
 // $a
 echo "<br>";
 echo "$a! {$$a} {$$$a} {$$$$a} {$$$$$a} {$$$$$$a}.";
+?>
+			</div>
+		</main>
+<?php
+include "../includes/footer.php";
+?>
+

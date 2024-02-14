@@ -1,4 +1,9 @@
-<div class="titulo">Olá PHP</div>
+<?php
+	include "../includes/header.php";
+?>
+	<main class="principal">
+	<div class="conteudo">
+		<div class="titulo">Olá PHP</div>
 
 <h2>Exemplo A</h2>
 <?php
@@ -10,4 +15,11 @@ echo "Mundo!";
 <?= "Outra forma de me 'expressar'!" ?>
 
 <?php
-phpinfo();
+//phpinfo();
+?>
+
+			</div>
+		</main>
+<?php
+include "../includes/footer.php";
+?>

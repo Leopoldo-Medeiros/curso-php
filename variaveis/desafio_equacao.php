@@ -1,4 +1,9 @@
-<div class="titulo">Desafio Equação</div>
+<?php
+	include "../includes/header.php";
+?>
+	<main class="principal">
+	<div class="conteudo">
+		<div class="titulo">Desafio Equação</div>
 
 <?php
 
@@ -16,3 +21,10 @@ $inferior = 10 ** 3;
 
 $final = $superior / $inferior;
 echo "O resultado final é " . $final . ".";
+?>
+
+			</div>
+		</main>
+<?php
+include "../includes/footer.php";
+?>

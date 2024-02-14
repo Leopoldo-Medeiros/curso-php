@@ -1,4 +1,9 @@
-<div class="titulo">Desafio Operadores Lógicos</div>
+<?php
+	include "../includes/header.php";
+?>
+	<main class="principal">
+	<div class="conteudo">
+		<div class="titulo">Desafio Operadores Lógicos</div>
 
 <!--
     2 trabalhos -> Terça e Quinta
@@ -70,3 +75,10 @@ if(isset($_POST['t1']) && isset($_POST['t2'])) {
 
     echo "<p>$resultado</p>";
 }
+?>
+
+			</div>
+		</main>
+<?php
+include "../includes/footer.php";
+?>

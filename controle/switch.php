@@ -1,4 +1,9 @@
-<div class="titulo">Switch</div>
+<?php
+	include "../includes/header.php";
+?>
+	<main class="principal">
+	<div class="conteudo">
+		<div class="titulo">Switch</div>
 
 <?php
 $categoria = 'wrewrew';
@@ -47,3 +52,11 @@ switch (strtolower($categoria)) {
 
 $precoFormatacao = number_format($preco, 2, ',', '.');
 echo "<p>Carro: $carro<br>Preço: $precoFormatacao</p>";
+?>
+
+
+			</div>
+		</main>
+<?php
+include "../includes/footer.php";
+?>

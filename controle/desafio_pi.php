@@ -1,4 +1,9 @@
-<div class="titulo">Desafio PI</div>
+<?php
+	include "../includes/header.php";
+?>
+	<main class="principal">
+	<div class="conteudo">
+		<div class="titulo">Desafio PI</div>
 
 <?php
 
@@ -27,3 +32,11 @@ if($pi - $piErrado <= 0.01) {
 } else {
     echo '<br>Valor errado!';
 }
+?>
+
+
+			</div>
+		</main>
+<?php
+include "../includes/footer.php";
+?>

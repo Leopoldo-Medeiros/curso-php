@@ -1,7 +1,12 @@
-<div class="titulo">Integração CSS</div>
+<?php
+	include "../includes/header.php";
+?>
+	<main class="principal">
+	<div class="conteudo">
+		<div class="titulo">Integração CSS</div>
 
 <h1 center>
-<?php 
+<?php
 echo 'Olá';
 echo '<small>';
 echo ' Mundo!';
@@ -36,3 +41,9 @@ echo '</small>';
         font-size: <?= 10 - 8 ?>rem;
     }
 </style>
+
+			</div>
+		</main>
+<?php
+include "../includes/footer.php";
+?>

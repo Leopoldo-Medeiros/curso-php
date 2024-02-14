@@ -1,4 +1,9 @@
-<div class="titulo">Desafio Switch</div>
+<?php
+	include "../includes/header.php";
+?>
+	<main class="principal">
+	<div class="conteudo">
+		<div class="titulo">Desafio Switch</div>
 
 <form action="#" method="post">
     <input type="text" name="param">
@@ -69,3 +74,11 @@ if (isset($_POST['conversao'])) {
     echo "<p>$mensagem</p>";
 
 }
+?>
+
+
+			</div>
+		</main>
+<?php
+include "../includes/footer.php";
+?>
