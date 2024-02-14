@@ -14,4 +14,3 @@
 			<a href="/" class="vermelho">Voltar</a>
 		</nav>
 </header>
-
