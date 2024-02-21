@@ -32,11 +32,14 @@
                             Foreach
                         </a>
                     </li>
+<<<<<<< HEAD
                     <li>
                         <a href="exercicio.php?dir=repeticoes&file=break_continue">
                             Break/Continue
                         </a>
                     </li>
+=======
+>>>>>>> 71cd1d4 (WIP)
                 </ul>
             </div>
             <div class="modulo laranja">
