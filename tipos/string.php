@@ -1,4 +1,9 @@
-<div class="titulo">Tipo String</div>
+<?php
+	include "../includes/header.php";
+?>
+	<main class="principal">
+	<div class="conteudo">
+		<div class="titulo">Tipo String</div>
 
 <?php
 echo 'Eu sou uma string';
@@ -26,3 +31,9 @@ echo '<br>' . strlen('Quantas letras?');
 echo '<br>' . mb_strlen("Eu também", "utf-8");
 echo '<br>' . substr('Só uma parte mesmo', 7, 6); // parte
 echo '<br>' . str_replace('isso', 'aquilo', 'Trocar isso isso');
+?>
+			</div>
+		</main>
+<?php
+include "../includes/footer.php";
+?>

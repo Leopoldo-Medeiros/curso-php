@@ -1,4 +1,9 @@
-<div class="titulo">Desafio Precedência</div>
+<?php
+	include "../includes/header.php";
+?>
+	<main class="principal">
+	<div class="conteudo">
+		<div class="titulo">Desafio Precedência</div>
 
 <?php
 echo '<p>1. Qual o valor será impresso?</p>';
@@ -9,3 +14,11 @@ echo 'a) ', (1 + 2) * 20 - 15;
 echo ' b) ', 4 * 5 ** 2;
 echo ' c) ', 2 ** 3 ** 4 / 1e25;
 echo ' d) ', 3 + (3 * 8) / 2 - 3;
+
+?>
+
+			</div>
+		</main>
+<?php
+include "../includes/footer.php";
+?>

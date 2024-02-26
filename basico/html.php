@@ -1,7 +1,12 @@
-<div class="titulo">Integração HTML</div>
+<?php
+	include "../includes/header.php";
+?>
+	<main class="principal">
+	<div class="conteudo">
+		<div class="titulo">Integração HTML</div>
 
 <h1>
-<?php 
+<?php
 echo 'Olá';
 echo '<small>';
 echo ' Mundo!';
@@ -13,3 +18,9 @@ echo '</small>';
 
 <br>
 <div><button><?= "Legal" ?></button></div>
+
+			</div>
+		</main>
+<?php
+include "../includes/footer.php";
+?>

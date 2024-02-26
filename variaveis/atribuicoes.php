@@ -1,4 +1,9 @@
-<div class="titulo">Atribuições</div>
+<?php
+	include "../includes/header.php";
+?>
+	<main class="principal">
+	<div class="conteudo">
+		<div class="titulo">Atribuições</div>
 
 <?php
 $title = 'Atribuições';
@@ -43,3 +48,9 @@ echo '<br>' . $texto;
 echo '<br>' . $variavelInexistente;
 $valor = $variavelInexistente ?? 'valor default';
 echo '<br>' . $valor;
+?>
+			</div>
+		</main>
+<?php
+include "../includes/footer.php";
+?>

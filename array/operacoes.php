@@ -1,45 +1,57 @@
-<div class="titulo">Operações</div>
-
 <?php
-$dados1 = [
-    "nome" => "Leo",
-    "idade" => 37
-];
+	include "../includes/header.php";
+?>
+	<main class="principal">
+		<div class="conteudo">
+			<div class="titulo">Operações</div>
 
-$dados2 = [
-    "naturalidade" => "São Paulo"
-];
+			<?php
+			$dados1 = [
+			    "nome" => "Leo",
+			    "idade" => 37
+			];
 
-$dados2["endereço"] = "Rua Dublin 15";
+			$dados2 = [
+			    "naturalidade" => "São Paulo"
+			];
 
-$dadosCompletos = $dados1 + $dados2;
-print_r ($dadosCompletos);
+			$dados2["endereço"] = "Rua Dublin 15";
 
-echo '<br>' . is_array($dadosCompletos);
-echo '<br>' . count($dadosCompletos);
+			$dadosCompletos = $dados1 + $dados2;
+			print_r ($dadosCompletos);
 
-echo '<br>';
-$indice = array_rand($dadosCompletos);
-echo "$indice = $dadosCompletos[indice]";
-echo '<br>';
-echo "{$dadosCompletos['idade']}";
-echo " ${dadosCompletos['idade']}";
+			echo '<br>' . is_array($dadosCompletos);
+			echo '<br>' . count($dadosCompletos);
 
-unset($dadosCompletos["nome"]);
-echo '<br>';
-var_dump($dadosCompletos);
+			echo '<br>';
+			$indice = array_rand($dadosCompletos);
+			echo "$indice = $dadosCompletos[indice]";
+			echo '<br>';
+			echo "{$dadosCompletos['idade']}";
+			echo " ${dadosCompletos['idade']}";
 
-$impares = [1, 3, 5, 7, 9];
-$pares = [2, 4, 6, 8];
+			unset($dadosCompletos["nome"]);
+			echo '<br>';
+			var_dump($dadosCompletos);
 
-$decimais = $pares + $impares;
-echo '<br>';
-print_r($decimais);
+			$impares = [1, 3, 5, 7, 9];
+			$pares = [2, 4, 6, 8];
 
-$decimais = array_merge($pares, $impares);
-echo '<br>';
-print_r($decimais);
+			$decimais = $pares + $impares;
+			echo '<br>';
+			print_r($decimais);
 
-sort($decimais);
-echo '<br>';
-print_r($decimais);
+			$decimais = array_merge($pares, $impares);
+			echo '<br>';
+			print_r($decimais);
+
+			sort($decimais);
+			echo '<br>';
+			print_r($decimais);
+			?>
+
+	</div>
+</main>
+<?php
+	include "../includes/footer.php";
+?>

@@ -1,4 +1,9 @@
-<div class="titulo">If Else</div>
+<?php
+	include "../includes/header.php";
+?>
+	<main class="principal">
+	<div class="conteudo">
+		<div class="titulo">If Else</div>
 
 <?php
 
@@ -25,3 +30,11 @@ if(false) {
 }
 
 echo "Fim";
+?>
+
+
+			</div>
+		</main>
+<?php
+include "../includes/footer.php";
+?>

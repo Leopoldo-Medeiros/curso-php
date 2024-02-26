@@ -1,39 +1,49 @@
-<div class="titulo">Multidimensionais</div>
-
 <?php
-$dados = [
-    [
-        "nome" => "Leopoldo",
-        "idade" => 37,
-        "naturalidade" => "Hell de Janeiro a Dezembro"
-    ],
-    [
-        "nome" => "Luciana",
-        "idade" => 42,
-        "naturalidade" => "São Paulo"
-    ]
-];
+	include "../includes/header.php";
+?>
+	<main class="principal">
+		<div class="conteudo">
+			<div class="titulo">Multidimensionais</div>
 
-print_r($dados);
-echo '<br>' . $dados[0]['idade'];
-echo '<br>' . $dados[1]['idade'];
+			<?php
+			$dados = [
+			    [
+			        "nome" => "Leopoldo",
+			        "idade" => 37,
+			        "naturalidade" => "Hell de Janeiro a Dezembro"
+			    ],
+			    [
+			        "nome" => "Luciana",
+			        "idade" => 42,
+			        "naturalidade" => "São Paulo"
+			    ]
+			];
 
-$dados[] = [
-    "nome" => "Pedro",
-    "idade" => 4,
-    "naturalidade" => "Dublin, Irlanda"
-];
+			print_r($dados);
+			echo '<br>' . $dados[0]['idade'];
+			echo '<br>' . $dados[1]['idade'];
 
-echo '<br>';
-print_r($dados);
-echo '<br>' . $dados[2]['idade']
-;
-$dados[2]["vizinho"] = "Elon Musk";
-echo '<br>';
-print_r($dados[2]);
+			$dados[] = [
+			    "nome" => "Pedro",
+			    "idade" => 4,
+			    "naturalidade" => "Dublin, Irlanda"
+			];
 
-unset($dados[1]);
-echo '<br>';
-print_r($dados);
+			echo '<br>';
+			print_r($dados);
+			echo '<br>' . $dados[2]['idade']
+			;
+			$dados[2]["vizinho"] = "Elon Musk";
+			echo '<br>';
+			print_r($dados[2]);
 
+			unset($dados[1]);
+			echo '<br>';
+			print_r($dados);
+			?>
 
+	</div>
+</main>
+<?php
+	include "../includes/footer.php";
+?>

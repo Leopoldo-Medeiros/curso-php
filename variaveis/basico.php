@@ -1,4 +1,9 @@
-<div class="titulo">Variáveis</div>
+<?php
+	include "../includes/header.php";
+?>
+	<main class="principal">
+	<div class="conteudo">
+		<div class="titulo">Variáveis</div>
 
 <?php
 $numeroA = 13;
@@ -36,3 +41,9 @@ $vâr5 = 'valida'; // evitar!
 
 echo '<br>';
 var_dump($_SERVER["HTTP_HOST"]);
+?>
+			</div>
+		</main>
+<?php
+include "../includes/footer.php";
+?>

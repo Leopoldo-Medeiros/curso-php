@@ -1,4 +1,9 @@
-<div class="titulo">Constantes</div>
+<?php
+	include "../includes/header.php";
+?>
+	<main class="principal">
+	<div class="conteudo">
+		<div class="titulo">Constantes</div>
 
 <?php
 define('TAXA_DE_JUROS', 5.9);
@@ -21,3 +26,10 @@ echo '<br>' . PHP_INT_MAX;
 echo '<br> Linha: ' . __LINE__;
 echo '<br>' . __FILE__;
 echo '<br>' . __DIR__;
+?>
+
+			</div>
+		</main>
+<?php
+include "../includes/footer.php";
+?>

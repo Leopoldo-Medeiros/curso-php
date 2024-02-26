@@ -1,4 +1,9 @@
-<div class="titulo">Operações Aritméticas</div>
+<?php
+	include "../includes/header.php";
+?>
+	<main class="principal">
+	<div class="conteudo">
+		<div class="titulo">Operações Aritméticas</div>
 
 <?php
 echo 1 + 1, '<br>';
@@ -24,3 +29,10 @@ echo 2 + 3 * 4, '<br>';
 echo (2 + 3) * 4, '<br>';
 echo 2 + 3 * 4 ** 2, '<br>';
 echo ((2 + 3) * 4) ** 2;
+?>
+
+			</div>
+		</main>
+<?php
+include "../includes/footer.php";
+?>
