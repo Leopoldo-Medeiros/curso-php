@@ -31,28 +31,37 @@ include "../includes/header.php";
 
         // Eu preciso saber se os campos do form estão preenchidos
         // Pra isso utilizei um if statement
-        if (isset($_GET['tipo'])) {
+        // Verifica se os parâmetros GET estão presentes e se são válidos
+        if (isset($_GET['tipo'], $_GET['marca'], $_GET['modelo'])) {
             $tipo = $_GET['tipo'];
-        }
-        if (isset($_GET['marca'])) {
             $marca = $_GET['marca'];
-        }
-        if (isset($_GET['modelo'])) {
             $modelo = $_GET['modelo'];
-        }
 
-        // Essa parte do código é para verificar se o item adicionado no GET está dentro do Array
-        if ($tipo && $marca && $modelo &&
-            isset($carros[$tipo]) &&
-            isset($carros[$tipo][$marca]) &&
-            in_array($modelo, $carros[$tipo][$marca])) {
-
-            // Se os valores são válidos, o processo continua
-            echo '<p>Carro selecionado: ' . $modelo . '</p>';
+            // Verifica se o tipo de carro está presente no array
+            if (isset($carros[$tipo])) {
+                // Verifica se a marca de carro está presente no array
+                if (isset($carros[$tipo][$marca])) {
+                    // Verifica se o modelo de carro está presente no array
+                    if (in_array($modelo, $carros[$tipo][$marca])) {
+                        // Se todos os parâmetros GET forem válidos, exibe o carro selecionado
+                        echo '<p>Carro selecionado: ' . $modelo . ' da marca ' . $marca . ', tipo ' . $tipo . '</p>';
+                    } else {
+                        // Se o modelo não estiver no array, exibe uma mensagem de erro
+                        echo '<p>Error message: "Modelo de carro inválido"</p>';
+                    }
+                } else {
+                    // Se a marca não estiver no array, exibe uma mensagem de erro
+                    echo '<p>Error message: "Marca de carro inválida"</p>';
+                }
+            } else {
+                // Se o tipo não estiver no array, exibe uma mensagem de erro
+                echo '<p>Error message: "Tipo de carro inválido"</p>';
+            }
         } else {
-            // Se os valores não são válidos ou não estão presentes no array de carros, exibe uma mensagem de erro
-            echo '<p>Error message: "Invalid option"</p>';
+            // Se algum parâmetro GET estiver ausente, exibe uma mensagem de erro
+            echo '<p>Error message: "Parâmetros GET ausentes"</p>';
         }
+
         //        $carro = implode(' ', array($tipo, $marca, $modelo));
 
         // Implementei um foreach para gerar as opções para o campo tipo, marca e modelo
@@ -91,7 +100,6 @@ include "../includes/header.php";
             }
         }
         ?>
-
         <form action="desafio_carros.php" class="post">
             <label>
                 <select name="tipo">
@@ -101,15 +109,15 @@ include "../includes/header.php";
             </label>
             <?php
             if ($tipo) {
-                echo '<select name="marca">';
-                echo '<option value="">Selecione a marca</option>';
-                echo $options_marca;
+                echo '<select name="tipo">';
+                echo '<option value="">Selecione a tipo</option>';
+                echo $options_tipo;
                 echo '</select>';
             }
             if ($marca) {
-                echo '<select name="modelo">';
-                echo '<option value="">Selecione o modelo</option>';
-                echo $options_modelo;
+                echo '<select name="marca">';
+                echo '<option value="">Selecione o marca</option>';
+                echo $options_marca;
                 echo '</select>';
             }
             if (!empty($tipo) && !empty($marca) && !empty($modelo)) {
@@ -118,6 +126,7 @@ include "../includes/header.php";
             } else {
                 echo '<button>Carregar</button>';
             }
+
             ?>
         </form>
 
