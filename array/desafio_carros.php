@@ -25,6 +25,8 @@ include "../includes/header.php";
         );
 
         // Nesta parte está recebendo os valores dos campos do formulário
+        // Aqui utilizei Operador ternário
+        // Se as variaveis estiverem presentes, atribui seus valores às variáveis correspondentes; caso contrário, atribui null.
         $tipo = isset($_GET['tipo']) ? $_GET['tipo'] : null;
         $marca = isset($_GET['marca']) ? $_GET['marca'] : null;
         $modelo = isset($_GET['modelo']) ? $_GET['modelo'] : null;
