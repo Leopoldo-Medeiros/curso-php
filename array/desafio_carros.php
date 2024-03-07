@@ -24,112 +24,64 @@ include "../includes/header.php";
             )
         );
 
-        // Nesta parte estou declarando as variáveis apra receberem os valores dos campos no Form
-        $tipo = null;
-        $marca = null;
-        $modelo = null;
+        // Nesta parte está recebendo os valores dos campos do formulário
+        $tipo = isset($_GET['tipo']) ? $_GET['tipo'] : null;
+        $marca = isset($_GET['marca']) ? $_GET['marca'] : null;
+        $modelo = isset($_GET['modelo']) ? $_GET['modelo'] : null;
 
-        // Eu preciso saber se os campos do form estão preenchidos
-        // Pra isso utilizei um if statement
-        // Verifica se os parâmetros GET estão presentes e se são válidos
-        if (isset($_GET['tipo'], $_GET['marca'], $_GET['modelo'])) {
-            $tipo = $_GET['tipo'];
-            $marca = $_GET['marca'];
-            $modelo = $_GET['modelo'];
-
-            // Verifica se o tipo de carro está presente no array
-            if (isset($carros[$tipo])) {
-                // Verifica se a marca de carro está presente no array
-                if (isset($carros[$tipo][$marca])) {
-                    // Verifica se o modelo de carro está presente no array
-                    if (in_array($modelo, $carros[$tipo][$marca])) {
-                        // Se todos os parâmetros GET forem válidos, exibe o carro selecionado
-                        echo '<p>Carro selecionado: ' . $modelo . ' da marca ' . $marca . ', tipo ' . $tipo . '</p>';
-                    } else {
-                        // Se o modelo não estiver no array, exibe uma mensagem de erro
-                        echo '<p>Error message: "Modelo de carro inválido"</p>';
-                    }
-                } else {
-                    // Se a marca não estiver no array, exibe uma mensagem de erro
-                    echo '<p>Error message: "Marca de carro inválida"</p>';
-                }
-            } else {
-                // Se o tipo não estiver no array, exibe uma mensagem de erro
-                echo '<p>Error message: "Tipo de carro inválido"</p>';
-            }
-        } else {
-            // Se algum parâmetro GET estiver ausente, exibe uma mensagem de erro
-            echo '<p>Error message: "Parâmetros GET ausentes"</p>';
-        }
-
-        //        $carro = implode(' ', array($tipo, $marca, $modelo));
-
-        // Implementei um foreach para gerar as opções para o campo tipo, marca e modelo
-        $options_tipo = '';
-        foreach ($carros as $tipo_key => $tipo_value) {
-            if ($tipo == $tipo_key) {
-                $options_tipo .= '<option value="' . $tipo_key . '" selected>' . $tipo_key . '</option>';
-            } else {
-                $options_tipo .= '<option value="' . $tipo_key . '">' . $tipo_key . '</option>';
-            }
-        }
-
-        // Campo Marca
-        $options_marca = '';
-        if ($tipo) {
-            $marcas = $carros[$tipo];
-            foreach ($marcas as $marca_key => $marca_value) {
-                if ($marca == $marca_key) {
-                    $options_marca .= '<option value="' . $marca_key . '" selected>' . $marca_key . '</option>';
-                } else {
-                    $options_marca .= '<option value="' . $marca_key . '">' . $marca_key . '</option>';
-                }
-            }
-        }
-
-        // Campo modelo
-        $options_modelo = '';
-        if ($tipo && $marca) {
-            $modelos = $carros[$tipo][$marca];
-            foreach ($modelos as $modelo_value) {
-                if ($modelo == $modelo_value) {
-                    $options_modelo .= '<option value="' . $modelo_value . '" selected>' . $modelo_value . '</option>';
-                } else {
-                    $options_modelo .= '<option value="' . $modelo_value . '">' . $modelo_value . '</option>';
-                }
-            }
-        }
         ?>
-        <form action="desafio_carros.php" class="post">
+        <form action="desafio_carros.php" class="post" method="GET">
             <label>
                 <select name="tipo">
                     <option value="">Selecione o tipo</option>
-                    <?php echo $options_tipo; ?>
+                    <?php
+                    // Gerando opções para o tipo de carro
+                    // Percorrendo o array
+                    foreach ($carros as $tipo_key => $tipo_value) {
+                        // Aqui estou usando operador ternário "?" pra substituir um possível if ou else
+                        $selecionado = ($tipo == $tipo_key) ? "selecionado" : "";
+                        echo '<option value="' . $tipo_key . '" ' . $selecionado . '>' . $tipo_key . '</option>';
+                    }
+                    ?>
                 </select>
             </label>
-            <?php
-            if ($tipo) {
-                echo '<select name="tipo">';
-                echo '<option value="">Selecione a tipo</option>';
-                echo $options_tipo;
-                echo '</select>';
-            }
-            if ($marca) {
-                echo '<select name="marca">';
-                echo '<option value="">Selecione o marca</option>';
-                echo $options_marca;
-                echo '</select>';
-            }
-            if (!empty($tipo) && !empty($marca) && !empty($modelo)) {
-                echo '<p>Carro selecionado <b>' . $modelo . '</b></p>';
-                echo '<p><a href="desafio_carros.php">Reset</a></p>';
-            } else {
-                echo '<button>Carregar</button>';
-            }
+            <?php if ($tipo): ?>
+                <label>
+                    <select name="marca">
+                        <option value="">Selecione a marca</option>
+                        <?php
+                        // Gerando as opções para a marca do carro
+                        foreach ($carros[$tipo] as $marca_key => $marca_value) {
+                            $selecionado = ($marca == $marca_key) ? "selecionado" : "";
+                            echo '<option value="' . $marca_key . '" ' . $selecionado . '>' . $marca_key . '</option>';
+                        }
+                        ?>
+                    </select>
+                </label>
+            <?php endif; ?>
 
-            ?>
+            <?php if ($marca): ?>
+                <label>
+                    <select name="modelo">
+                        <option value="">Selecione o modelo</option>
+                        <?php
+                        // Gerando as opções para o modelo do carro
+                        foreach ($carros[$tipo][$marca] as $modelo_value) {
+                            $selecionado = ($modelo == $modelo_value) ? "selecionado" : "";
+                            echo '<option value="' . $modelo_value . '" ' . $selecionado . '>' . $modelo_value . '</option>';
+                        }
+                        ?>
+                    </select>
+                </label>
+            <?php endif; ?>
+
+            <?php if (!empty($tipo) && !empty($marca) && !empty($modelo)): ?>
+                <p>Carro selecionado <b><?php echo $modelo; ?></b></p>
+                <p><a href="desafio_carros.php">Reset</a></p>
+            <?php else: ?>
+                <button>Carregar</button>
+            <?php endif; ?>
         </form>
-
     </div>
 </main>
 <?php
