@@ -140,6 +140,7 @@ $arquivos_basico = [
                             Desafio Impressao
                         </a>
                     </li>
+<<<<<<< HEAD
                     <li>
                         <a href="exercicio.php?dir=repeticoes&file=while">
                             While/ Do While
@@ -155,6 +156,8 @@ $arquivos_basico = [
                             Desafio Tabela #02
                         </a>
                     </li>
+=======
+>>>>>>> b892757 (Desafio Impressao)
                 </ul>
             </div>
             <div class="modulo laranja">
