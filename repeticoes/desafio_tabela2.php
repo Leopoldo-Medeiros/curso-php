@@ -56,6 +56,10 @@ Exercicio:
         margin: 20px 0px;
     }
 
+    button {
+        background-color: #05c51c;
+        color: #ffffff;
+    }
     table tr {
         border: 1px solid #444;
     }
