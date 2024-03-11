@@ -13,5 +13,5 @@ $contador = 0;
 while(true) {
     echo "while(true) $contador <br>";
     $contador++;
-    if($contador >= VALOR_LIMITE) break; 
+    if($contador >= VALOR_LIMITE) break;
 }
