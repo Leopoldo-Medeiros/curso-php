@@ -56,10 +56,13 @@ Exercicio:
         margin: 20px 0px;
     }
 
+<<<<<<< HEAD
     button {
         background-color: #05c51c;
         color: #ffffff;
     }
+=======
+>>>>>>> edcfc69 (Desafio Tabela 2)
     table tr {
         border: 1px solid #444;
     }
