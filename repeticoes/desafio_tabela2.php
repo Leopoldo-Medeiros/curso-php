@@ -57,10 +57,13 @@ Exercicio:
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     button {
         background-color: #05c51c;
         color: #ffffff;
     }
+=======
+>>>>>>> edcfc69 (Desafio Tabela 2)
 =======
 >>>>>>> edcfc69 (Desafio Tabela 2)
     table tr {
