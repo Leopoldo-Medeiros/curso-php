@@ -1,9 +1,13 @@
+<<<<<<< HEAD
 <?php
 	include "../includes/header.php";
 ?>
 	<main class="principal">
 	<div class="conteudo">
 		<div class="titulo">Operações Aritméticas</div>
+=======
+<div class="titulo">Operações Aritméticas</div>
+>>>>>>> c4e8900 (Initial commit)
 
 <?php
 echo 1 + 1, '<br>';
@@ -28,6 +32,7 @@ echo '<p>Precedência</p>';
 echo 2 + 3 * 4, '<br>';
 echo (2 + 3) * 4, '<br>';
 echo 2 + 3 * 4 ** 2, '<br>';
+<<<<<<< HEAD
 echo ((2 + 3) * 4) ** 2;
 ?>
 
@@ -36,3 +41,6 @@ echo ((2 + 3) * 4) ** 2;
 <?php
 include "../includes/footer.php";
 ?>
+=======
+echo ((2 + 3) * 4) ** 2;
+>>>>>>> c4e8900 (Initial commit)

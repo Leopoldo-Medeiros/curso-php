@@ -1,9 +1,13 @@
+<<<<<<< HEAD
 <?php
 	include "../includes/header.php";
 ?>
 	<main class="principal">
 	<div class="conteudo">
 		<div class="titulo">Variáveis</div>
+=======
+<div class="titulo">Variáveis</div>
+>>>>>>> c4e8900 (Initial commit)
 
 <?php
 $numeroA = 13;
@@ -40,6 +44,7 @@ $vâr5 = 'valida'; // evitar!
 // $var8% = 'invalida';
 
 echo '<br>';
+<<<<<<< HEAD
 var_dump($_SERVER["HTTP_HOST"]);
 ?>
 			</div>
@@ -47,3 +52,6 @@ var_dump($_SERVER["HTTP_HOST"]);
 <?php
 include "../includes/footer.php";
 ?>
+=======
+var_dump($_SERVER["HTTP_HOST"]);
+>>>>>>> c4e8900 (Initial commit)

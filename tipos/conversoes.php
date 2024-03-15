@@ -1,9 +1,13 @@
+<<<<<<< HEAD
 <?php
 	include "../includes/header.php";
 ?>
 	<main class="principal">
 	<div class="conteudo">
 		<div class="titulo">Conversões</div>
+=======
+<div class="titulo">Conversões</div>
+>>>>>>> c4e8900 (Initial commit)
 
 <?php
 echo is_int(PHP_INT_MAX);
@@ -48,6 +52,7 @@ var_dump(1 + "-3.2e2");
 echo '<br>';
 var_dump((int) "10.5");
 echo '<br>';
+<<<<<<< HEAD
 var_dump((float) "10.5");
 ?>
 
@@ -56,3 +61,6 @@ var_dump((float) "10.5");
 <?php
 include "../includes/footer.php";
 ?>
+=======
+var_dump((float) "10.5");
+>>>>>>> c4e8900 (Initial commit)

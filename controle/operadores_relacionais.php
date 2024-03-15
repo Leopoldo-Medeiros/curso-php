@@ -1,9 +1,13 @@
+<<<<<<< HEAD
 <?php
 	include "../includes/header.php";
 ?>
 	<main class="principal">
 	<div class="conteudo">
 		<div class="titulo">Operadores Relacionais</div>
+=======
+<div class="titulo">Operadores Relacionais</div>
+>>>>>>> c4e8900 (Initial commit)
 
 <?php
 var_dump(1 == 1); // true
@@ -50,9 +54,12 @@ var_dump(!!" ");
         margin-top: 0px;
     }
 </style>
+<<<<<<< HEAD
 
 			</div>
 		</main>
 <?php
 include "../includes/footer.php";
 ?>
+=======
+>>>>>>> c4e8900 (Initial commit)

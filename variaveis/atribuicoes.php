@@ -1,9 +1,13 @@
+<<<<<<< HEAD
 <?php
 	include "../includes/header.php";
 ?>
 	<main class="principal">
 	<div class="conteudo">
 		<div class="titulo">Atribuições</div>
+=======
+<div class="titulo">Atribuições</div>
+>>>>>>> c4e8900 (Initial commit)
 
 <?php
 $title = 'Atribuições';
@@ -47,6 +51,7 @@ echo '<br>' . $texto;
 // $variavelInexistente = 'valor existente';
 echo '<br>' . $variavelInexistente;
 $valor = $variavelInexistente ?? 'valor default';
+<<<<<<< HEAD
 echo '<br>' . $valor;
 ?>
 			</div>
@@ -54,3 +59,6 @@ echo '<br>' . $valor;
 <?php
 include "../includes/footer.php";
 ?>
+=======
+echo '<br>' . $valor;
+>>>>>>> c4e8900 (Initial commit)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 	include "../includes/header.php";
 ?>
@@ -7,6 +8,12 @@
 
 <h1>
 <?php
+=======
+<div class="titulo">Integração HTML</div>
+
+<h1>
+<?php 
+>>>>>>> c4e8900 (Initial commit)
 echo 'Olá';
 echo '<small>';
 echo ' Mundo!';
@@ -17,6 +24,7 @@ echo '</small>';
 <?= "<div>Outra forma de me 'expressar'!</div>" ?>
 
 <br>
+<<<<<<< HEAD
 <div><button><?= "Legal" ?></button></div>
 
 			</div>
@@ -24,3 +32,6 @@ echo '</small>';
 <?php
 include "../includes/footer.php";
 ?>
+=======
+<div><button><?= "Legal" ?></button></div>
+>>>>>>> c4e8900 (Initial commit)
