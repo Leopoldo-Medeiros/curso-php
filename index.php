@@ -1,6 +1,17 @@
 <?php
 include(__DIR__ . "/includes/header.php");
 
+$arquivos_repeticoes_main = [
+    'Laço For' => 'for.php',
+    'Desafio For' => 'desafio_for.php',
+    'Foreach' => 'foreach.php',
+    'Break/Continue' => 'break_continue.php',
+    'Desafio Impressão' => 'desafio_impressao.php',
+    'While/ Do While' => 'while.php',
+    'Desafio Tabela #01' => 'desafio_tabela.php',
+    'Desafio Tabela #02' => 'desafio_tabela2.php'
+];
+
 $arquivos_array = [
     'Array' => 'basico.php',
     'Mapa' => 'mapa.php',
@@ -110,6 +121,16 @@ $arquivos_basico = [
 	                ?>
               </ul>
           </div>
+            <div class="modulo verde-escuro">
+                <h3>6. Repetições</h3>
+                <ul>
+                    <?php
+                    foreach ($arquivos_repeticoes_main as $nome => $arquivo) {
+                        echo "<li><a href='repeticoes_main/{$arquivo}'>{$nome}</a></li>";
+                    }
+                    ?>
+                </ul>
+            </div>
         </nav>
     </div>
 </main>
