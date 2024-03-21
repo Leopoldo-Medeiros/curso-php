@@ -1,9 +1,13 @@
+<<<<<<< HEAD
 <?php
 	include "../includes/header.php";
 ?>
 	<main class="principal">
 	<div class="conteudo">
 		<div class="titulo">Desafio Equação</div>
+=======
+<div class="titulo">Desafio Equação</div>
+>>>>>>> c4e8900 (Initial commit)
 
 <?php
 
@@ -21,6 +25,7 @@ $inferior = 10 ** 3;
 
 $final = $superior / $inferior;
 echo "O resultado final é " . $final . ".";
+<<<<<<< HEAD
 ?>
 
 			</div>
@@ -28,3 +33,5 @@ echo "O resultado final é " . $final . ".";
 <?php
 include "../includes/footer.php";
 ?>
+=======
+>>>>>>> c4e8900 (Initial commit)

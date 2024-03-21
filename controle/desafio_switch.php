@@ -1,9 +1,13 @@
+<<<<<<< HEAD
 <?php
 	include "../includes/header.php";
 ?>
 	<main class="principal">
 	<div class="conteudo">
 		<div class="titulo">Desafio Switch</div>
+=======
+<div class="titulo">Desafio Switch</div>
+>>>>>>> c4e8900 (Initial commit)
 
 <form action="#" method="post">
     <input type="text" name="param">
@@ -74,6 +78,7 @@ if (isset($_POST['conversao'])) {
     echo "<p>$mensagem</p>";
 
 }
+<<<<<<< HEAD
 ?>
 
 
@@ -82,3 +87,5 @@ if (isset($_POST['conversao'])) {
 <?php
 include "../includes/footer.php";
 ?>
+=======
+>>>>>>> c4e8900 (Initial commit)

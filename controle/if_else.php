@@ -1,9 +1,13 @@
+<<<<<<< HEAD
 <?php
 	include "../includes/header.php";
 ?>
 	<main class="principal">
 	<div class="conteudo">
 		<div class="titulo">If Else</div>
+=======
+<div class="titulo">If Else</div>
+>>>>>>> c4e8900 (Initial commit)
 
 <?php
 
@@ -29,6 +33,7 @@ if(false) {
     echo "Ultimo Passo<br>";
 }
 
+<<<<<<< HEAD
 echo "Fim";
 ?>
 
@@ -38,3 +43,6 @@ echo "Fim";
 <?php
 include "../includes/footer.php";
 ?>
+=======
+echo "Fim";
+>>>>>>> c4e8900 (Initial commit)

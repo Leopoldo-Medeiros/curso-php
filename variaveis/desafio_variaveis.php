@@ -1,9 +1,13 @@
+<<<<<<< HEAD
 <?php
 	include "../includes/header.php";
 ?>
 	<main class="principal">
 	<div class="conteudo">
 		<div class="titulo">Desafio Variáveis</div>
+=======
+<div class="titulo">Desafio Variáveis</div>
+>>>>>>> c4e8900 (Initial commit)
 
 <?php
 
@@ -18,6 +22,7 @@ echo "Nossa! Eu consegui responder esse desafio.";
 
 // $a
 echo "<br>";
+<<<<<<< HEAD
 echo "$a! {$$a} {$$$a} {$$$$a} {$$$$$a} {$$$$$$a}.";
 ?>
 			</div>
@@ -26,3 +31,6 @@ echo "$a! {$$a} {$$$a} {$$$$a} {$$$$$a} {$$$$$$a}.";
 include "../includes/footer.php";
 ?>
 
+=======
+echo "$a! {$$a} {$$$a} {$$$$a} {$$$$$a} {$$$$$$a}.";
+>>>>>>> c4e8900 (Initial commit)

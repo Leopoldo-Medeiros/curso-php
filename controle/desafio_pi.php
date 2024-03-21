@@ -1,9 +1,13 @@
+<<<<<<< HEAD
 <?php
 	include "../includes/header.php";
 ?>
 	<main class="principal">
 	<div class="conteudo">
 		<div class="titulo">Desafio PI</div>
+=======
+<div class="titulo">Desafio PI</div>
+>>>>>>> c4e8900 (Initial commit)
 
 <?php
 
@@ -31,6 +35,7 @@ if($pi - $piErrado <= 0.01) {
     echo '<br>Praticamente iguais!';
 } else {
     echo '<br>Valor errado!';
+<<<<<<< HEAD
 }
 ?>
 
@@ -40,3 +45,6 @@ if($pi - $piErrado <= 0.01) {
 <?php
 include "../includes/footer.php";
 ?>
+=======
+}
+>>>>>>> c4e8900 (Initial commit)
