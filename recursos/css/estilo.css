@@ -19,6 +19,11 @@ body {
         "rodape";
 }
 
+.titulo {
+    font-size: 30px;
+    color: #555555;
+}
+
 .cabecalho {
     grid-area: cabecalho;
     background-color: #1867c0;
@@ -148,4 +153,5 @@ body {
  }
 hr {
     margin-top: 0px;
+    color: #555555;
 }
