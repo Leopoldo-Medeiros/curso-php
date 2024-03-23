@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 include "../includes/header.php";
 ?>
@@ -60,4 +59,3 @@ echo '<br>' . $texto[0];
 echo '<br>' . $texto[1];
 echo '<br>' . $texto[11]; // Cuidado!
 echo '<br>' . mb_strstr($texto, 10, 3);
->>>>>>> c4e8900 (Initial commit)
