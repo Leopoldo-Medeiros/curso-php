@@ -1,5 +1,4 @@
 <?php
-<<<<<<< HEAD
 include "../includes/header.php";
 ?>
 <main class="principal">
@@ -95,11 +94,12 @@ include "../includes/header.php";
             <?php endif; ?>
         </form>
 </main>
+
 <?php
 include "../includes/footer.php";
 ?>
-=======
 
+<?php
 $carros = array(
     'sedans' => array(
         'Toyota' => array('Camry', 'Corolla', 'Avalon'),
@@ -161,4 +161,4 @@ if ($tipo && $marca) {
     }
 }
 ?>
->>>>>>> c4e8900 (Initial commit)
+

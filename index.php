@@ -1,6 +1,10 @@
 <?php
 include(__DIR__ . "/includes/header.php");
 
+$arquivos_funcoes = [
+
+];
+
 $arquivos_repeticoes_main = [
     'Laço For' => 'for.php',
     'Desafio For' => 'desafio_for.php',
@@ -129,6 +133,18 @@ $arquivos_basico = [
                         echo "<li><a href='repeticoes_main/{$arquivo}'>{$nome}</a></li>";
                     }
                     ?>
+                </ul>
+            </div>
+            <div class="modulo vermelho-escuro">
+                <h3>7. Funções</h3>
+                <ul>
+                    <?php
+                    foreach ($arquivos_funcoes as $nome => $arquivo) {
+                        echo "<li><a href='funcoes/{$arquivo}'>{$nome}</a></li>";
+                    }
+                    ?>
+                </ul>
+            </div>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -145,6 +161,13 @@ $arquivos_basico = [
 <main class="principal">
     <div class="conteudo">
         <nav class="modulos">
+            <div class="modulo vermelho-escuro">
+                <h3>7. Funções</h3>
+                <ul>
+                    Função & Escopo
+                </ul>
+            </div>
+
             <div class="modulo verde-escuro">
                 <h3>6. Repetições</h3>
                 <ul>
