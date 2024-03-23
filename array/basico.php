@@ -4,6 +4,7 @@ include "../includes/header.php";
 <main class="principal">
 	<div class="conteudo">
 		<div class="titulo">Array</div>
+        <hr>
 		<?php
 			$lista = array(1, 2, 3.4, "texto");
 			echo $lista . '<br>';

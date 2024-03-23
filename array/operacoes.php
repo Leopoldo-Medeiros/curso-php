@@ -5,6 +5,7 @@
 	<main class="principal">
 		<div class="conteudo">
 			<div class="titulo">Operações</div>
+            <hr>
 
 			<?php
 			$dados1 = [
