@@ -1,60 +1,55 @@
-<<<<<<< HEAD
 <?php
-	include "../includes/header.php";
+include "../includes/header.php";
 ?>
-	<main class="principal">
-	<div class="conteudo">
-		<div class="titulo">Integração CSS</div>
+<main class="principal">
+    <div class="conteudo">
+        <div class="titulo">Integração CSS</div>
+        <hr>
 
-<h1 center>
-<?php
-=======
-<div class="titulo">Integração CSS</div>
+        <h1 center>
+            <?php
+            echo 'Olá';
+            echo '<small>';
+            echo ' Mundo!';
+            echo '</small>';
+            ?>
+        </h1>
 
-<h1 center>
-<?php 
->>>>>>> c4e8900 (Initial commit)
-echo 'Olá';
-echo '<small>';
-echo ' Mundo!';
-echo '</small>';
-?>
-</h1>
+        <?= "<div center azul>Outra forma de me 'expressar'!</div>" ?>
 
-<?= "<div center azul>Outra forma de me 'expressar'!</div>" ?>
+        <br>
+        <div center>
+            <button dobro><?= "Legal" ?></button>
+        </div>
 
-<br>
-<div center><button dobro><?= "Legal" ?></button></div>
+        <style>
+            button {
+                padding: 5px <?= 2 * 10 ?>px;
+                background-color: #4286f4;
+                color: #EEE;
+                font-weight: bold;
+                border-radius: 10px;
+            }
 
-<style>
-    button {
-        padding: 5px <?= 2 * 10 ?>px;
-        background-color: #4286f4;
-        color: #EEE;
-        font-weight: bold;
-        border-radius: 10px;
-    }
+            [center] {
+                display: flex;
+                justify-content: center;
+            }
 
-    [center] {
-        display: flex;
-        justify-content: center;
-    }
+            <?= "[azul]" ?>
+            {
+                color: #4286f4
+            ;
+            }
 
-    <?= "[azul]" ?> {
-        color: #4286f4;
-    }
+            [dobro] {
+                font-size: <?= 10 - 8 ?>rem;
+            }
+        </style>
 
-    [dobro] {
-        font-size: <?= 10 - 8 ?>rem;
-    }
-<<<<<<< HEAD
-</style>
-
-			</div>
-		</main>
+    </div>
+</main>
 <?php
 include "../includes/footer.php";
 ?>
-=======
 </style>
->>>>>>> c4e8900 (Initial commit)

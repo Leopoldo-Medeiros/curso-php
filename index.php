@@ -89,7 +89,7 @@ $arquivos_basico = [
 		        </ul>
 	        </div>
 	        <div class="modulo vermelho">
-		        <h3>2.Tipos</h3>
+		        <h3>2. Tipos</h3>
 		        <ul>
                 <?php
                 foreach ($arquivos_tipos as $nome => $arquivo) {
