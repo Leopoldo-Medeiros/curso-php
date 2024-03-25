@@ -1,36 +1,30 @@
-<<<<<<< HEAD
 <?php
-	include "../includes/header.php";
+include "../includes/header.php";
 ?>
-	<main class="principal">
-	<div class="conteudo">
-		<div class="titulo">Desafio Variáveis</div>
-=======
-<div class="titulo">Desafio Variáveis</div>
->>>>>>> c4e8900 (Initial commit)
+<main class="principal">
+    <div class="conteudo">
+        <div class="titulo">Desafio Variáveis</div>
+        <hr>
 
-<?php
+        <?php
 
-$a = 'Nossa';
-$Nossa = 'Eu';
-$Eu = 'consegui';
-$consegui = 'responder';
-$responder = 'esse';
-$esse = 'desafio';
+        $a = 'Nossa';
+        $Nossa = 'Eu';
+        $Eu = 'consegui';
+        $consegui = 'responder';
+        $responder = 'esse';
+        $esse = 'desafio';
 
-echo "Nossa! Eu consegui responder esse desafio.";
+        echo "Nossa! Eu consegui responder esse desafio.";
 
-// $a
-echo "<br>";
-<<<<<<< HEAD
-echo "$a! {$$a} {$$$a} {$$$$a} {$$$$$a} {$$$$$$a}.";
-?>
-			</div>
-		</main>
+        // $a
+        echo "<br>";
+        echo "$a! {$$a} {$$$a} {$$$$a} {$$$$$a} {$$$$$$a}.";
+        ?>
+    </div>
+</main>
 <?php
 include "../includes/footer.php";
 ?>
 
-=======
 echo "$a! {$$a} {$$$a} {$$$$a} {$$$$$a} {$$$$$$a}.";
->>>>>>> c4e8900 (Initial commit)

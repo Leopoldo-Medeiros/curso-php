@@ -1,17 +1,15 @@
-<<<<<<< HEAD
 <?php
 	include "../includes/header.php";
 ?>
 	<main class="principal">
 	<div class="conteudo">
 		<div class="titulo">Constantes</div>
-=======
-<div class="titulo">Constantes</div>
->>>>>>> c4e8900 (Initial commit)
+        <hr>
 
 <?php
 define('TAXA_DE_JUROS', 5.9);
 echo TAXA_DE_JUROS;
+$TAXA_DE_JUROS = '';
 echo '<br>' . $TAXA_DE_JUROS . '!';
 // TAXA_DE_JUROS = 2.5;
 
@@ -29,7 +27,6 @@ echo '<br>' . PHP_INT_MAX;
 
 echo '<br> Linha: ' . __LINE__;
 echo '<br>' . __FILE__;
-<<<<<<< HEAD
 echo '<br>' . __DIR__;
 ?>
 
@@ -38,6 +35,5 @@ echo '<br>' . __DIR__;
 <?php
 include "../includes/footer.php";
 ?>
-=======
+
 echo '<br>' . __DIR__;
->>>>>>> c4e8900 (Initial commit)
