@@ -1,54 +1,54 @@
-<<<<<<< HEAD
 <?php
-	include "../includes/header.php";
+include "../includes/header.php";
 ?>
-	<main class="principal">
-		<div class="conteudo">
-			<div class="titulo">Mapa</div>
-			<?php
-				$dados = array(
-				    "idade" => 25,
-				    "cor" => "azul",
-				    "peso" => 76.4
-				);
-				print_r($dados);
-				var_dump([$dados[0]]);
-				echo '<br>' . $dados["idade"];
-				echo '<br>' . $dados["cor"];
-				echo '<br>' . $dados["peso"];
-				echo '<br>';
-				var_dump($dados["outra_info"]);
-				$lista = array (
-				    "a",
-				    "cinco" => "b",
-				    8 => "d",
-				    "e",
-				    6 => "f",
-				    "g",
-				    8 => "h"
-				);
-				echo '<br>';
-				print_r($lista);
-				$lista[] = 'i';
-				echo '<br>';
-				print_r($lista);
-				$lista['vinte'] = 'j';
-				echo '<br>';
-				print_r($lista);
-				$lista[false] = 'Tentei indexar com false!';
-				echo '<br>';
-				print_r($lista);
-				$lista[true] = 'Tentei indexar com true!';
-				echo '<br>';
-				print_r($lista);
-			?>
-			</div>
-		</main>
+    <main class="principal">
+        <div class="conteudo">
+            <div class="titulo">Mapa</div>
+            <hr>
+
+            <?php
+            $dados = array(
+                "idade" => 25,
+                "cor" => "azul",
+                "peso" => 76.4
+            );
+            print_r($dados);
+            var_dump([$dados[0]]);
+            echo '<br>' . $dados["idade"];
+            echo '<br>' . $dados["cor"];
+            echo '<br>' . $dados["peso"];
+            echo '<br>';
+            var_dump($dados["outra_info"]);
+            $lista = array(
+                "a",
+                "cinco" => "b",
+                8 => "d",
+                "e",
+                6 => "f",
+                "g",
+                8 => "h"
+            );
+            echo '<br>';
+            print_r($lista);
+            $lista[] = 'i';
+            echo '<br>';
+            print_r($lista);
+            $lista['vinte'] = 'j';
+            echo '<br>';
+            print_r($lista);
+            $lista[false] = 'Tentei indexar com false!';
+            echo '<br>';
+            print_r($lista);
+            $lista[true] = 'Tentei indexar com true!';
+            echo '<br>';
+            print_r($lista);
+            ?>
+        </div>
+    </main>
 <?php
 include "../includes/footer.php";
 ?>
-=======
-<div class="titulo">Mapa</div>
+    <div class="titulo">Mapa</div>
 
 <?php
 $dados = array(
@@ -66,7 +66,7 @@ echo '<br>' . $dados["peso"];
 echo '<br>';
 var_dump($dados["outra_info"]);
 
-$lista = array (
+$lista = array(
     "a",
     "cinco" => "b",
     8 => "d",
@@ -94,4 +94,3 @@ print_r($lista);
 $lista[true] = 'Tentei indexar com true!';
 echo '<br>';
 print_r($lista);
->>>>>>> c4e8900 (Initial commit)

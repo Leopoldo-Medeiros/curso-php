@@ -4,6 +4,8 @@ include "../includes/header.php";
 <main class="principal">
     <div class="conteudo">
         <div class="titulo">Arrays Constantes</div>
+        <hr>
+
         <?php
 
         $carros = array(
