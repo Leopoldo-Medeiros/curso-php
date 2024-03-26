@@ -1,48 +1,44 @@
-<<<<<<< HEAD
 <?php
-	include "../includes/header.php";
+include "../includes/header.php";
 ?>
-	<main class="principal">
-	<div class="conteudo">
-		<div class="titulo">If Else</div>
-=======
-<div class="titulo">If Else</div>
->>>>>>> c4e8900 (Initial commit)
+<main class="principal">
+    <div class="conteudo">
+        <div class="titulo">If Else</div>
+        <hr>
 
-<?php
+        <?php
 
-if(true){
-    echo "Serei impresso?<br>";
-}
+        if (true) {
+            echo "Serei impresso?<br>";
+        }
 
-if(false) {
-    echo "Verdadeiro - Parte A<br>";
-    echo "Verdadeiro - Parte B<br>";
-} else {
-    echo "Falso - Parte A<br>";
-    echo "Falso - Parte B<br>";
-}
+        if (false) {
+            echo "Verdadeiro - Parte A<br>";
+            echo "Verdadeiro - Parte B<br>";
+        } else {
+            echo "Falso - Parte A<br>";
+            echo "Falso - Parte B<br>";
+        }
 
-if(false) {
-    echo "Passo A<br>";
-} elseif(false) {
-    echo "Passo B<br>";
-} elseif(true){
-    echo "Passo C<br>";
-} {
-    echo "Ultimo Passo<br>";
-}
+        if (false) {
+            echo "Passo A<br>";
+        } elseif (false) {
+            echo "Passo B<br>";
+        } elseif (true) {
+            echo "Passo C<br>";
+        }
+        {
+            echo "Ultimo Passo<br>";
+        }
 
-<<<<<<< HEAD
-echo "Fim";
-?>
+        echo "Fim";
+        ?>
 
 
-			</div>
-		</main>
+    </div>
+</main>
 <?php
 include "../includes/footer.php";
 ?>
-=======
+
 echo "Fim";
->>>>>>> c4e8900 (Initial commit)

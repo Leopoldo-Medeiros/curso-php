@@ -1,33 +1,28 @@
 <<<<<<< HEAD
 <?php
-	include "../includes/header.php";
+include "../includes/header.php";
 ?>
-	<main class="principal">
-	<div class="conteudo">
-		<div class="titulo">Olá PHP</div>
-=======
-<div class="titulo">Olá PHP</div>
->>>>>>> c4e8900 (Initial commit)
+<main class="principal">
+    <div class="conteudo">
+        <div class="titulo">Olá PHP</div>
+        <hr>
 
-<h2>Exemplo A</h2>
-<?php
-echo 'Olá ';
-echo "Mundo!";
-?>
+        <h2>Exemplo A</h2>
+        <?php
+        echo 'Olá ';
+        echo "Mundo!";
+        ?>
 
-<h2>Exemplo B</h2>
-<?= "Outra forma de me 'expressar'!" ?>
+        <h2>Exemplo B</h2>
+        <?= "Outra forma de me 'expressar'!" ?>
 
-<?php
-<<<<<<< HEAD
-//phpinfo();
-?>
+        <?php
+        //phpinfo();
+        ?>
 
-			</div>
-		</main>
+    </div>
+</main>
 <?php
 include "../includes/footer.php";
 ?>
-=======
-phpinfo();
->>>>>>> c4e8900 (Initial commit)
+

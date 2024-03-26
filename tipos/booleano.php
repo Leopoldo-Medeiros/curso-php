@@ -1,47 +1,41 @@
-<<<<<<< HEAD
 <?php
-	include "../includes/header.php";
+include "../includes/header.php";
 ?>
-	<main class="principal">
-	<div class="conteudo">
-		<div class="titulo">Tipo Booleano</div>
-=======
-<div class="titulo">Tipo Booleano</div>
->>>>>>> c4e8900 (Initial commit)
+<main class="principal">
+    <div class="conteudo">
+        <div class="titulo">Tipo Booleano</div>
+        <hr>
 
-<?php
-echo TRUE;
-echo '<br>';
-echo FALSE;
+        <?php
+        echo TRUE;
+        echo '<br>';
+        echo FALSE;
 
-echo '<br>' . var_dump(true);
-echo '<br>' . var_dump(False);
-echo '<br>' . var_dump('false');
-echo '<br>' . is_bool(false);
-echo '<br>' . is_bool('true');
+        echo '<br>' . var_dump(true);
+        echo '<br>' . var_dump(False);
+        echo '<br>' . var_dump('false');
+        echo '<br>' . is_bool(false);
+        echo '<br>' . is_bool('true');
 
-// fazer as regras de conversões
-echo '<p>Regras:</p>';
-echo '<br>' . var_dump((bool) 0); // apenas zero é false
-echo '<br>' . var_dump((bool) 20);
-echo '<br>' . var_dump((bool) -1);
-echo '<br>' . var_dump((bool) 0.0);
-echo '<br>' . var_dump((bool) 0.0000000001);
-echo '<br>' . var_dump((bool) ""); // false
-echo '<br>' . var_dump((bool) "0"); // false
-echo '<br>' . var_dump((bool) " "); // todo resto é true
-echo '<br>' . var_dump((bool) "00");
-echo '<br>' . var_dump((bool) "false");
+        // fazer as regras de conversões
+        echo '<p>Regras:</p>';
+        echo '<br>' . var_dump((bool)0); // apenas zero é false
+        echo '<br>' . var_dump((bool)20);
+        echo '<br>' . var_dump((bool)-1);
+        echo '<br>' . var_dump((bool)0.0);
+        echo '<br>' . var_dump((bool)0.0000000001);
+        echo '<br>' . var_dump((bool)""); // false
+        echo '<br>' . var_dump((bool)"0"); // false
+        echo '<br>' . var_dump((bool)" "); // todo resto é true
+        echo '<br>' . var_dump((bool)"00");
+        echo '<br>' . var_dump((bool)"false");
 
-<<<<<<< HEAD
-echo '<br>' . var_dump(!!"false");
-?>
+        echo '<br>' . var_dump(!!"false");
+        ?>
 
-			</div>
-		</main>
+    </div>
+</main>
 <?php
 include "../includes/footer.php";
 ?>
-=======
 echo '<br>' . var_dump(!!"false");
->>>>>>> c4e8900 (Initial commit)

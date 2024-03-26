@@ -1,34 +1,35 @@
-<<<<<<< HEAD
 <?php
 include "../includes/header.php";
 ?>
-<main class="principal">
-	<div class="conteudo">
-		<div class="titulo">Desafio Index</div>
-			<?php
-			$lista = array(
-			    1,
-			    4 => 2,
-			    3 => 3,
-			    'a' => 4,
-			    5,
-			    '9' => 6,
-			    '06' => 7,
-			    0 => 8
-			);
+    <main class="principal">
+        <div class="conteudo">
+            <div class="titulo">Desafio Index</div>
+            <hr>
 
-			// Array( [0] => 1 [4] => 2 [3] => 3 [a] => 4 [5] => 5 )
-			// [9] => 6 [06] => 7)
-			print_r($lista);
-			?>
+            <?php
+            $lista = array(
+                1,
+                4 => 2,
+                3 => 3,
+                'a' => 4,
+                5,
+                '9' => 6,
+                '06' => 7,
+                0 => 8
+            );
 
-	</div>
-</main>
+            // Array( [0] => 1 [4] => 2 [3] => 3 [a] => 4 [5] => 5 )
+            // [9] => 6 [06] => 7)
+            print_r($lista);
+            ?>
+
+        </div>
+    </main>
 <?php
-	include "../includes/footer.php";
+include "../includes/footer.php";
 ?>
-=======
-<div class="titulo">Desafio Index</div>
+
+    <div class="titulo">Desafio Index</div>
 
 <?php
 $lista = array(
@@ -45,4 +46,3 @@ $lista = array(
 // Array( [0] => 1 [4] => 2 [3] => 3 [a] => 4 [5] => 5 )
 // [9] => 6 [06] => 7)
 print_r($lista);
->>>>>>> c4e8900 (Initial commit)
