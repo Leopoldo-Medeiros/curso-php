@@ -6,7 +6,8 @@ include(__DIR__ . "/includes/header.php");
 
 $arquivos_funcoes = [
     'Função & Escopo' => 'escopo.php',
-    'Argumentos e Retorno' => 'args_retorno.php'
+    'Argumentos e Retorno' => 'args_retorno.php',
+    'Desafio Palindromo' => 'palindromo.php'
 ];
 
 $arquivos_repeticoes_main = [
