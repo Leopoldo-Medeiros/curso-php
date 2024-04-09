@@ -9,6 +9,7 @@ $arquivos_funcoes = [
     'Argumentos e Retorno' => 'args_retorno.php',
     'Desafio Palindromo' => 'palindromo.php',
     'Argumentos Variáveis' => 'args_variaveis.php',
+    'Argumento Padrão' => 'arg_padrao.php',
 ];
 
 $arquivos_repeticoes_main = [
