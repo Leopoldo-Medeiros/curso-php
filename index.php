@@ -12,6 +12,7 @@ $arquivos_funcoes = [
     'Argumento Padrão' => 'arg_padrao.php',
     'Usando Tipos' => 'usando_tipos.php',
     'Funções Anonimas' => 'anonimas.php',
+    'Closure & Callable' => 'closure_callable.php',
 ];
 
 $arquivos_repeticoes_main = [
