@@ -13,6 +13,7 @@ $arquivos_funcoes = [
     'Usando Tipos' => 'usando_tipos.php',
     'Funções Anonimas' => 'anonimas.php',
     'Closure & Callable' => 'closure_callable.php',
+    'Recursividade' => 'recursividade.php',
 ];
 
 $arquivos_repeticoes_main = [
