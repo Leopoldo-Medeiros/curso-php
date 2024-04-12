@@ -11,6 +11,7 @@ $arquivos_funcoes = [
     'Argumentos Variáveis' => 'args_variaveis.php',
     'Argumento Padrão' => 'arg_padrao.php',
     'Usando Tipos' => 'usando_tipos.php',
+    'Funções Anonimas' => 'anonimas.php',
 ];
 
 $arquivos_repeticoes_main = [
