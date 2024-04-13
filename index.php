@@ -16,6 +16,7 @@ $arquivos_funcoes = [
     'Recursividade' => 'recursividade.php',
     'Desafio Recursão' => 'desafio_recursao.php',
     'Retornando Função' => 'retornando_funcao.php',
+    'Map & Filter' => 'map_filter.php',
 ];
 
 $arquivos_repeticoes_main = [
