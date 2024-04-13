@@ -1,10 +1,10 @@
 <?php
 include "../includes/header.php";
 ?>
-<main class="principal">
-    <div class="conteudo">
-        <div class="titulo">Desafio Recursão</div>
-        <hr>
+    <main class="principal">
+        <div class="conteudo">
+            <div class="titulo">Desafio Recursão</div>
+            <hr>
 
 <?php
 
