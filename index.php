@@ -14,6 +14,7 @@ $arquivos_funcoes = [
     'Funções Anonimas' => 'anonimas.php',
     'Closure & Callable' => 'closure_callable.php',
     'Recursividade' => 'recursividade.php',
+    'Desafio Recursão' => 'desafio_recursao.php',
 ];
 
 $arquivos_repeticoes_main = [
