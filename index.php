@@ -4,6 +4,9 @@ ini_set('display_errors', 1);
 
 include(__DIR__ . "/includes/header.php");
 
+$arquivos_classes_objetos = [
+     'Classe543' => 'classe.php',
+];
 $arquivos_funcoes = [
     'Função & Escopo' => 'escopo.php',
     'Argumentos e Retorno' => 'args_retorno.php',
@@ -155,6 +158,16 @@ $arquivos_basico = [
                     <?php
                     foreach ($arquivos_funcoes as $nome => $arquivo) {
                         echo "<li><a href='funcoes/{$arquivo}'>{$nome}</a></li>";
+                    }
+                    ?>
+                </ul>
+            </div>
+            <div class="modulo azul-escuro">
+                <h3>8. Paradigma O.O</h3>
+                <ul>
+                    <?php
+                    foreach ($arquivos_classes_objetos as $nome => $arquivo) {
+                        echo "<li><a href='classes_objetos/{$arquivo}'>{$nome}</a></li>";
                     }
                     ?>
                 </ul>
