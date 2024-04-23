@@ -8,7 +8,8 @@ include "../includes/header.php";
 
 <?php
 
-class Cliente
+class
+Cliente
 {
     // Atributos
     public $nome = "Pedro";

@@ -5,7 +5,9 @@ ini_set('display_errors', 1);
 include(__DIR__ . "/includes/header.php");
 
 $arquivos_classes_objetos = [
-     'Classe543' => 'classe.php',
+    'Classe' => 'classe.php',
+    'Desafio Classe' => 'desafio_classe.php',
+
 ];
 $arquivos_funcoes = [
     'Função & Escopo' => 'escopo.php',
